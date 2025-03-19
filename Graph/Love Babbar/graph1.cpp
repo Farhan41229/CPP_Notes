@@ -3,13 +3,14 @@ using namespace std;
 
 class Graph {
 public:
-    unordered_map<int, list<int>> adj; // Adjacency List
+    map<int, list<int>> adj; // Adjacency List
     vector<vector<int>> matrix; // Adjacency Matrix
     int n; // Number of nodes
 
     Graph(int nodes) {
         n = nodes;
-        matrix.resize(n, vector<int>(n, 0));
+        matrix.resize(n, vector<int>(n, 0)); // 0 based indexing
+        // matrix.resize(n+1, vector<int>(n+1, 0)); // 1 based indexing
     }
 
     void addEdge_AdjList(int u, int v, bool direction) {
@@ -33,8 +34,8 @@ public:
         }
     }
 
-    void printAdjMatrix() {
-        cout << "Adjacency Matrix:" << endl;
+    void printAdjMatrix() { // Convert the loop from 1 to equal to n for 1 based indexing
+        cout << "Adjacency Matrix:" << endl;  // loop from 1 to n-1 for 1 based indexing
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 cout << matrix[i][j] << " ";
@@ -42,6 +43,8 @@ public:
             cout << endl;
         }
     }
+
+    
 
     
 };

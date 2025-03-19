@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Lenovo/OneDrive/Documents/VSCODE/DSA Notes/Graph/Love Babba",
-      "program": "c:/Users/Lenovo/OneDrive/Documents/VSCODE/DSA Notes/Graph/Love Babba/build/Debug/outDebug",
+      "cwd": "c:/Users/Lenovo/OneDrive/Documents/VSCODE/DSA Notes/Graph/Love Babbar",
+      "program": "c:/Users/Lenovo/OneDrive/Documents/VSCODE/DSA Notes/Graph/Love Babbar/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
