@@ -1,4 +1,4 @@
-# Hashing
+<h1 style="text-align: center;">Hashing</h1>
 
 ```cpp
 #include <iostream>
@@ -121,7 +121,7 @@ int main() {
 
 ```
 
-# Trie
+<h1 style="text-align: center;">Trie</h1>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -255,7 +255,7 @@ int main() {
 }
 ```
 
-## TRIE XOR
+<h2 style="text-align: center;">TRIE XOR</h1>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -338,7 +338,7 @@ int main() {
     }
 ```
 
-# DSU
+<h1 style="text-align: center;">DSU</h1>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -496,7 +496,7 @@ int main() {
 
 ```
 
-# Graph Theory
+<h1 style="text-align: center;">Graph Theory</h1>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -677,7 +677,7 @@ git clone https://github.com/Farhan41229/CPP_Notes.git
 */
 ```
 
-# Tree
+<h1 style="text-align: center;">Tree</h1>
 
 ```cpp
 #include <bits/stdc++.h>
