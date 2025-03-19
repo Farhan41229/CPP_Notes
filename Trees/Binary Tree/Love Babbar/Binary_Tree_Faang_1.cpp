@@ -28,8 +28,34 @@ Node* buildtree(Node* root){
     cout<<"Insert Data for inserting into the right of "<<data<<endl;
     root->right = buildtree(root->right);
     return root;
-
 }
+
+Node* buildtree2(Node* root, int n, vector<pair<int, int>>& nodes, vector<int>& queries) {
+    // Creating a tree from the input provided in the problem statement
+    vector<Node*> tree(n+1, nullptr);
+    
+    // Building the tree nodes with provided left and right child indices
+    for (int i = 1; i <= n; ++i) {
+        int a = nodes[i-1].first;
+        int b = nodes[i-1].second;
+        
+        tree[i] = new Node(i);
+        if (a != -1) tree[i]->left = tree[a];
+        if (b != -1) tree[i]->right = tree[b];
+    }
+    
+    // Performing the swap operations based on queries
+    for (int k : queries) {
+        Node* temp = tree[k]->left;
+        tree[k]->left = tree[k]->right;
+        tree[k]->right = temp;
+    }
+
+    // Return the root of the tree
+    return tree[1];
+}
+
+
 int height(Node* node){
     if (node == nullptr) return 0;
     else return 1 + max(height(node->left) , height (node->right));
